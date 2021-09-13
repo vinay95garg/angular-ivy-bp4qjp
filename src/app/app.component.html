@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="badge-container">
+    <div class="icon-container">
+      <mat-icon [ngStyle]="{'color':'white'}" matBadge="{{counter}}" matBadgeColor="warn" id="reset">{{iconType}}
+      </mat-icon>
+    </div>
+    <div class="actions">
+      <button  disabled = "{{startFlag}}"id="start" mat-raised-button color="warn" >{{startBtnLabel}}</button>
+      <button  disabled = "{{pauseFlag}}" id="pause" mat-raised-button color="accent" class="stop-button">{{pauseBtnLabel}}</button>
+    </div>
+  </div>
+</div>
